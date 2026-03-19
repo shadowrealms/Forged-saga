@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Forged Saga | GE & LE Studios</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: black;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+img {
+  width: 90%;
+  max-width: 500px;
+  margin: 20px auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.video iframe {
+  width: 90%;
+  max-width: 800px;
+  height: 400px;
+}
+
+button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background: black;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<!-- 🎵 MUSIC -->
+<audio id="bg-music" loop>
+  <source src="https://docs.google.com/uc?export=download&id=18ld0Ja1t2IUxD5J3KG0mmrR8iTa88DdO" type="audio/mpeg">
+</audio>
+
+<button onclick="toggleMusic()">🔊 Sound</button>
+
+<script>
+let music = document.getElementById("bg-music");
+
+function toggleMusic() {
+  if (music.paused) {
+    music.play();
+  } else {
+    music.pause();
+  }
+}
+</script>
+
+<!-- 🔥 HERO -->
+<section class="hero">
+  <h1>THE FORGED SAGA</h1>
+  <p>Story. Purpose. Legacy.</p>
+</section>
+
+<!-- 🎬 TRAILER -->
+<section class="video">
+  <h2>Watch The Forged Saga</h2>
+  <iframe src="https://www.youtube.com/embed/OiyxQow8Z5k" frameborder="0" allowfullscreen></iframe>
+</section>
+
+<!-- 🖼️ IMAGES -->
+<section>
+  <h2>The World</h2>
+
+  <img src="shadowed.jpg">
+  <img src="shadowflame.jpg">
+  <img src="shadowrealms.jpg">
+
+</section>
+
+<!-- ❤️ HOUSE OF MERCY -->
+<section>
+  <h2>Why the House of Mercy Matters</h2>
+
+  <p style="max-width:800px;margin:auto;">
+  Stories have always shaped the world long after the people who created them are gone.
+  The reason we create is not just to entertain, but to build something that outlives us.
+  A place that feeds the hungry.
+  A place where dignity is restored.
+  A place where creativity funds compassion.
+  </p>
+
+</section>
+
+<!-- 👕 MERCH -->
+<section>
+  <h2>Forged Identity</h2>
+
+  <img src="hoodie1.jpg">
+  <img src="hoodie2.jpg">
+</section>
+
+<!-- 🙏 FINAL -->
+<section>
+  <h2>The Covenant</h2>
+
+  <img src="covenant.jpg">
+
+  <p>
+  This is not just a project. This is a covenant.
+  </p>
+</section>
+
+</body>
+  </html>
