@@ -1,173 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Forged Saga | GE & LE Studios</title>
+<title>The Forged Saga</title>
+
 <style>
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #000;
-    color: #fff;
-    text-align: center;
-    line-height: 1.6;
-  }
-  header, section, footer {
-    padding: 56px 20px;
-  }
-  .hero {
-    min-height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: linear-gradient(180deg, #111 0%, #000 100%);
-  }
-  h1 { font-size: 42px; margin-bottom: 12px; }
-  h2 { font-size: 28px; margin-bottom: 16px; }
-  p {
-    max-width: 850px;
-    margin: 0 auto 18px auto;
-  }
-  .button, button {
-    display: inline-block;
-    background: #111;
-    color: #fff;
-    border: 1px solid #888;
-    padding: 12px 18px;
-    text-decoration: none;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-  .music-btn {
-    position: fixed;
-    top: 16px;
-    right: 16px;
-    z-index: 999;
-  }
-  iframe {
-    width: 90%;
-    max-width: 900px;
-    height: 420px;
-    border: none;
-    border-radius: 12px;
-  }
-  .card {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 24px;
-    background: #111;
-    border: 1px solid #222;
-    border-radius: 14px;
-  }
-  .quote {
-    font-size: 22px;
-    font-style: italic;
-  }
-  .small {
-    color: #bbb;
-    font-size: 14px;
-  }
+body {
+  background: black;
+  color: white;
+  font-family: Arial;
+  margin: 0;
+  text-align: center;
+}
+
+section {
+  padding: 80px 20px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 1s;
+}
+
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card {
+  background: #111;
+  margin: 20px;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+img {
+  width: 90%;
+  border-radius: 20px;
+  margin-top: 15px;
+}
+
+button {
+  padding: 12px 20px;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 10px;
+}
 </style>
 </head>
+
 <body>
 
-<audio id="bg-music" loop>
-  <source src="https://docs.google.com/uc?export=download&id=18ld0Ja1t2IUxD5J3KG0mmrR8iTa88DdO" type="audio/mpeg">
-</audio>
-
-<button class="music-btn" onclick="toggleMusic()">🔊 Sound</button>
-
-<header class="hero">
-  <h1>THE FORGED SAGA</h1>
-  <p>GE & LE Studios</p>
-  <p>Story. Purpose. Legacy.</p>
-</header>
-
 <section>
-  <h2>Watch The Trailer</h2>
-  <iframe src="https://www.youtube.com/embed/OiyxQow8Z5k" allowfullscreen></iframe>
+<h1>THE FORGED SAGA</h1>
+<p>Story. Purpose. Legacy.</p>
+
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
 </section>
 
-<section>
-  <div class="card">
-    <h2>Why the House of Mercy Matters</h2>
-    <p>
-      Stories have always shaped the world long after the people who created them are gone.
-      The reason we write books and develop films at GE & LE Studios is not simply to entertain.
-      It is to build something that outlives us.
-    </p>
-    <p>
-      At the center of that vision is the House of Mercy.
-      Creative work can do more than generate attention or profit — it can generate sustained good.
-      A place that feeds the hungry. A place where those who have fallen through the cracks are treated with dignity.
-      A place where creativity funds compassion.
-    </p>
-    <p>
-      The goal isn’t legacy for the creators. The goal is continuity for the mission.
-    </p>
-  </div>
+<section class="card">
+<h2>Watch The Trailer</h2>
+
+<iframe width="300" height="200"
+src="https://www.youtube.com/embed/YOUR_VIDEO_ID">
+</iframe>
 </section>
 
-<section>
-  <div class="card">
-    <h2>The Night Mercy Cried</h2>
-    <p class="quote">“Am I home?”</p>
-    <p>
-      Some children do not die on the street.
-      Some children go home in the arms of Mercy.
-    </p>
-  </div>
+<section class="card">
+<h2>Why the House of Mercy Matters</h2>
+
+<img src="https://images.unsplash.com/photo-1529336953121-ad5a0d43d0d2">
+
+<p>
+Stories shape the world. The goal is not legacy — it is continuity.
+</p>
 </section>
 
-<section>
-  <div class="card">
-    <h2>The Covenant</h2>
-    <p>
-      This is not just a business. This is a covenant.
-      Every story is meant to serve something greater than itself.
-    </p>
-    <p>
-      To feed the hungry. To give drink to the thirsty.
-      To welcome the stranger. To remember the broken.
-    </p>
-  </div>
+<section class="card">
+<h2>The Covenant</h2>
+
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+
+<p>
+To feed the hungry. To welcome the stranger. To remember the broken.
+</p>
 </section>
 
-<section>
-  <div class="card">
-    <h2>The Forged Game</h2>
-    <p>
-      The game is part of the larger Forged universe and will return in a future build of the site.
-    </p>
-    <p><strong>Coming back soon.</strong></p>
-  </div>
+<section class="card">
+<h2>The Forged Game</h2>
+<p>Coming back soon.</p>
+
+<img src="https://images.unsplash.com/photo-1511512578047-dfb367046420">
 </section>
 
-<section>
-  <div class="card">
-    <h2>The Personal Assistant</h2>
-    <p>
-      Our personal assistant experience is also planned to return as part of the full GE & LE Studios ecosystem.
-    </p>
-    <p><strong>Coming back soon.</strong></p>
-  </div>
-</section>
+<section class="card">
+<h2>The Personal Assistant</h2>
+<p>Coming back soon.</p>
 
-<footer>
-  <p><strong>George Eagles • GE & LE Studios</strong></p>
-  <p class="small">The Forged Saga</p>
-</footer>
+<img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a">
+</section>
 
 <script>
-  const music = document.getElementById("bg-music");
-  function toggleMusic() {
-    if (music.paused) {
-      music.play();
-    } else {
-      music.pause();
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+  sections.forEach(sec => {
+    const top = sec.getBoundingClientRect().top;
+    if(top < window.innerHeight - 100) {
+      sec.classList.add("show");
     }
-  }
+  });
+});
 </script>
 
 </body>
